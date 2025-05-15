@@ -83,4 +83,33 @@
     background: rgb(27, 146, 225);
   }
 
- 
+ @media only screen and (max-width: 600px) {
+  .techGrid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .techGrid span {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .skillBarText > h2 {
+    font-size: 1.25rem;
+  }
+
+  .skillBarText > p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .skillBars {
+    margin: 1rem;
+    max-width: 95%;
+  }
+
+  .skillBar {
+    padding: 1rem;
+  }
+}
