@@ -1,0 +1,86 @@
+#about{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 80rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    scroll-margin-top: 100px;
+}
+
+
+.skillBars{
+    margin: 1.5rem;
+    width: 100%;
+    max-width: 80%;
+    
+}
+
+
+.techBars{
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 80rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.skillBar{
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50);
+}
+
+.skillBarText>p{
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    
+}
+
+.skillBarText>ul{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.skillBarText> ul li{
+    margin: 0.5rem 0;
+
+}
+
+.techGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    gap: 1.75rem;
+    margin-top: 0.5rem;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .techGrid span {
+    background: rgb(27, 146, 225);
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .techGrid span:hover {
+    transform: scale(1.05);
+    background: rgb(27, 146, 225);
+  }
+
+ 

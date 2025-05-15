@@ -1,0 +1,126 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 75rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.resumeText {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+
+.bg{
+    position: absolute;
+    top: -1rem;
+    right: -10px;
+    z-index: -1;
+    object-fit: cover;
+    height: 80vh;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+
+.introName span {
+  opacity: 0;
+  display: inline-block;
+  color: rgb(27, 146, 225);
+  animation: reveal 0.4s forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.introPara{
+    font-size: medium ;
+    font-weight: 300  ;
+    letter-spacing: 1px;
+}
+
+.btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    color: black;
+    cursor: pointer;
+    
+}
+.introButtons {
+    display: flex;
+    gap: 1rem; 
+    margin-top: 1rem;
+  }
+  
+.btn:hover {
+    background-color: rgb(84, 83, 83);
+    transform: scale(1.05);
+    color: white;
+  }
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+
+}
+
+/* @media screen and (max-width:840px) {
+    .bg{
+        right:-10vw
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg{
+        right:-20vw
+    }  
+} */
+
+@media screen and (max-width: 840px) {
+    .bg {
+        right: -10vw;
+        height: 60vh; 
+        width: auto; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+        right: -20vw;
+        height: 50vh;
+        opacity: 0.3;
+    }
+}
