@@ -87,7 +87,9 @@ const projectData = [
   ))}   
              
             </div>
-            <button className='workBtn'>See More</button>
+            <a href="https://github.com/G-Aarush-Raj" target="_blank" rel="noopener noreferrer">
+  <button className='workBtn'>See More</button>
+</a>
     </section>
   );
 }
