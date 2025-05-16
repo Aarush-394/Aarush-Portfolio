@@ -12,7 +12,7 @@ const Intro = () => {
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
-          I'm{' '}
+          I am{' '}
           <span className="introName">
             {name.split('').map((char, index) => (
               <span key={index} style={{ '--i': index + 1 }}>
