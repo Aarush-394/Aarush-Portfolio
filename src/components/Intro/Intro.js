@@ -38,7 +38,7 @@ const Intro = () => {
             </button>
           </a>
 
-          <a href="/resume.pdf" download>
+          <a href="/resume2.pdf" download>
             <button className="btn">
               <img src={resImg} alt="resume" className="btnImg" />
               <span className="resumeText">Resume</span>
